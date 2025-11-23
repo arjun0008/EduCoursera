@@ -115,30 +115,14 @@ npm install
 npm start
 </pre>
 
-<p>CRA frontend runs at: <strong>http://localhost:3000</strong></p>
+<p>CRA frontend runs at: </p>
+
+<pre>
+http://localhost:3000
+</pre>
 
 <hr>
 
 <h2>🎉 Everything is Ready!</h2>
 
-<p>
-You now have:
-</p>
 
-<ul>
-  <li>✅ Django backend running at <strong>localhost:8000</strong></li>
-  <li>✅ PostgreSQL configured</li>
-  <li>✅ Stripe webhook working</li>
-  <li>✅ React frontend running at <strong>localhost:3000</strong></li>
-</ul>
-
-<p>If you want, I can add:</p>
-
-<ul>
-  <li>📌 <code>.env.example</code></li>
-  <li>📌 GitHub badges</li>
-  <li>📌 Screenshots section</li>
-  <li>📌 Folder structure</li>
-</ul>
-
-<p>Just tell me!</p>
