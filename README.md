@@ -20,6 +20,8 @@ sudo apt update
 sudo apt install python3 python3-venv python3-pip postgresql postgresql-contrib nodejs npm
 </pre>
 
+<p>If you're on Windows PC then you should manually install the required components </p>
+
 <hr>
 
 <h2>🔥 PART 2 — Setup PostgreSQL Database</h2>
