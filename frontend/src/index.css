@@ -1,0 +1,205 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Primary Button */
+.btn-primary-custom {
+  background-color: #148FA2;
+  color: white;
+  border: 1px solid #148FA2;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-primary-custom:hover {
+  background-color: #007081;
+  border-color: #007081;
+}
+
+.btn-primary-custom:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(38, 255, 204, 0.5);
+}
+
+/* Outlined Button */
+.btn-outline{
+  background-color: transparent;
+  color: #148FA2;
+  border: 1px solid #148FA2;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline:hover {
+  background-color: #148FA2;
+  color: white;
+  border-color: #148FA2;
+}
+
+.btn-outline:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+/* Courses.css */
+
+/* Main container */
+.courses-container {
+  padding: 20px;
+}
+
+/* Header styling */
+.courses-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+/* Grid container for courses */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* Course card styling */
+.course-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.course-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Content inside the card */
+.course-card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.course-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.course-price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #148FA2;
+  margin-bottom: 16px;
+}
+
+.course-card-btn {
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 5px;
+  border: 2px solid #148FA2;
+  background-color: transparent;
+  color: #148FA2;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  text-transform: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.course-card-btn:hover {
+  background-color: #148FA2;
+  color: #fff;
+}
+
+/* Media queries for responsiveness */
+
+/* Mobile devices: single column layout */
+@media (max-width: 599px) {
+  .courses-header {
+    font-size: 2.5rem; /* Slightly smaller font on mobile */
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr; /* One column on mobile */
+    gap: 15px; /* Smaller gap between items */
+  }
+}
+
+/* Tablets: two columns layout */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .courses-header {
+    font-size: 2.8rem; /* Slightly smaller font on tablets */
+  }
+
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    gap: 20px;
+  }
+}
+
+/* Desktop: three columns layout */
+@media (min-width: 1024px) {
+  .courses-header {
+    font-size: 3rem; /* Default large font on desktop */
+  }
+
+  .courses-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for desktop */
+    gap: 20px;
+  }
+}
