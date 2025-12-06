@@ -85,7 +85,6 @@ def stripe_webhook(request):
     # 2. Event Handling
     if event["type"] == "checkout.session.completed":
         session = event["data"]["object"]
-        # user_id_str = session["metadata"].get("user_id")
         user_id_str = session.get("metadata", {}).get("user_id")
 
         if not user_id_str:

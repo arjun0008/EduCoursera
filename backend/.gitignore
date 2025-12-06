@@ -1,3 +1,4 @@
 .env
 stripe.txt
 users.txt
+db.txt
